@@ -49,9 +49,15 @@
    			<artifactId>spring-context-support</artifactId>
   		</dependency>
   		<dependency>
+   			<groupId>com.github.ben-manes.caffeine</groupId>
+   			<artifactId>caffeine</artifactId>
+  		</dependency>
+  		
+  		<!-- Miscellaneously Dependencies -->
+  		<dependency>
    			<groupId>com.google.guava</groupId>
    			<artifactId>guava</artifactId>
-   			<version>18.0</version>
+   			<version>19.0</version>
   		</dependency>
   		
 		<!-- Dependencies for Actuator Production Monitoring and Management -->
@@ -89,6 +95,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--  
+				<executions>
+					<execution>
+						<goals>
+							<goal>build-info</goal>
+						</goals>
+					</execution>
+				</executions>
+				-->
 			</plugin>
 		</plugins>
 	</build>
