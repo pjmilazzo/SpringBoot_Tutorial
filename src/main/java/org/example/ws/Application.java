@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * Spring Boot main application class. Serves as both the runtime application
  * entry point and the central Java configuration class.
  *
- * @author Matt Warman
  */
 @SpringBootApplication
 @EnableTransactionManagement
@@ -19,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableScheduling
 @EnableAsync
 public class Application {
-
+	
     /**
      * Entry point for the application.
      * 
